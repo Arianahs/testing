@@ -19,6 +19,13 @@ class NumFinderTest {
         assertEquals(5, nf.getLargest());
         assertEquals(5, nf.getSmallest());
     }
+    @Test
+    void encontrarConNumerosNegativos() {
+        NumFinder nf = new NumFinder();
+        nf.find(new int[]{-10, -20, -30, -40});
+        assertEquals(-10, nf.getLargest());
+        assertEquals(-40, nf.getSmallest());
+    }
 
 
 }
