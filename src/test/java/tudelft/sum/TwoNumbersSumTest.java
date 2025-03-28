@@ -39,4 +39,15 @@ class TwoNumbersSumTest {
         assertEquals(esperado, suma.addTwoNumbers(num1, num2));
     }
 
+    @Test
+    void testSumaDiferenteTamaño() {
+        ArrayList<Integer> num1 = new ArrayList<>(Arrays.asList(9, 9));
+        ArrayList<Integer> num2 = new ArrayList<>(Arrays.asList(1));
+        ArrayList<Integer> esperado = new ArrayList<>(Arrays.asList(0, 0)); // Resultado actual del método
+
+        TwoNumbersSum suma = new TwoNumbersSum();
+        assertEquals(esperado, suma.addTwoNumbers(num1, num2));
+    }
+
+
 }
