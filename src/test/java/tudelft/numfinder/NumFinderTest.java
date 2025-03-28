@@ -27,6 +27,13 @@ class NumFinderTest {
         assertEquals(-40, nf.getSmallest());
     }
 
+    @Test
+    void encontrarConArrayVacio() {
+        NumFinder nf = new NumFinder();
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> nf.find(new int[]{}));
+        assertEquals("El array no puede estar vacío", exception.getMessage());
+    }
+
 
 }
 
