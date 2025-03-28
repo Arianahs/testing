@@ -33,5 +33,10 @@ public class GHappyTest {
         Assertions.assertFalse(resultado);
     }
 
-
+    @Test
+    public void gAlFinalInfeliz() {
+        GHappy gHappy = new GHappy();
+        boolean resultado = gHappy.gHappy("ggxxg");
+        Assertions.assertFalse(resultado);
+    }
 }
