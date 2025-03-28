@@ -28,4 +28,18 @@ public class LeapYearTest {
         LeapYear ly = new LeapYear();
         Assertions.assertFalse(ly.isLeapYear(2017));
     }
+    @Test
+    public void negativeYearShouldNotBeLeap() {
+        LeapYear ly = new LeapYear();
+        Assertions.assertFalse(ly.isLeapYear(-400));
+    }
+
+    @Test
+    public void veryLargeYear() {
+        LeapYear ly = new LeapYear();
+        Assertions.assertTrue(ly.isLeapYear(4000000));
+    }
+
+
+
 }
