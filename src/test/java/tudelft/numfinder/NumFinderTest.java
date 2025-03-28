@@ -12,6 +12,13 @@ class NumFinderTest {
         assertEquals(4, nf.getLargest());
         assertEquals(1, nf.getSmallest());
     }
+    @Test
+    void encontrarUnicoNumero() {
+        NumFinder nf = new NumFinder();
+        nf.find(new int[]{5});
+        assertEquals(5, nf.getLargest());
+        assertEquals(5, nf.getSmallest());
+    }
 
 
 }
