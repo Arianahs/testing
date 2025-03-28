@@ -29,6 +29,14 @@ class TwoNumbersSumTest {
         assertEquals(esperado, sumador.addTwoNumbers(num1, num2));
     }
 
+    @Test
+    void testSumaConNumeroVacio() {
+        ArrayList<Integer> num1 = new ArrayList<>(Arrays.asList(1, 2, 3));
+        ArrayList<Integer> num2 = new ArrayList<>();
+        ArrayList<Integer> esperado = new ArrayList<>(Arrays.asList(1, 2, 3));
 
+        TwoNumbersSum suma = new TwoNumbersSum();
+        assertEquals(esperado, suma.addTwoNumbers(num1, num2));
+    }
 
 }
