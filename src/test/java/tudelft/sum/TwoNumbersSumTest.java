@@ -18,4 +18,17 @@ class TwoNumbersSumTest {
 
         assertEquals(esperado, suma.addTwoNumbers(num1, num2));
     }
+
+    @Test
+    void testSumaConCeros() {
+        ArrayList<Integer> num1 = new ArrayList<>(Arrays.asList(0, 0, 0));
+        ArrayList<Integer> num2 = new ArrayList<>(Arrays.asList(3, 2, 1));
+        ArrayList<Integer> esperado = new ArrayList<>(Arrays.asList(3, 2, 1));
+
+        TwoNumbersSum sumador = new TwoNumbersSum();
+        assertEquals(esperado, sumador.addTwoNumbers(num1, num2));
+    }
+
+
+
 }
