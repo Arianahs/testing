@@ -12,5 +12,12 @@ public class GHappyTest {
         Assertions.assertTrue(resultado);
     }
 
+    @Test
+    public void gSolaInfeliz() {
+        GHappy gHappy = new GHappy();
+        boolean resultado = gHappy.gHappy("xxgxx");
+        Assertions.assertFalse(resultado);
+    }
+
 
 }
